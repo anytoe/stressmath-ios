@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{62C447D7-84D2-4B9C-831B-C39CD61B6B8C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MathSpeedChallenge</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>1.3</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFastDev>true</MtouchFastDev>
+    <AssemblyName>MathSpeedChallenge</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchSdkVersion></MtouchSdkVersion>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <AssemblyName>MathSpeedChallenge</AssemblyName>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>false</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <AssemblyName>MathSpeedChallenge</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchSdkVersion></MtouchSdkVersion>
+    <AssemblyName>MathSpeedChallenge</AssemblyName>
+    <MtouchLink>None</MtouchLink>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>StressMath.App.iOS</AssemblyName>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Controller\Highscore\HighscoreTableCell.xib" />
+    <InterfaceDefinition Include="Controller\Highscore\HighscoreView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Controller\Highscore\HighscoreTableCell.designer.cs">
+      <DependentUpon>HighscoreTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Highscore\HighscoreTableSource.cs" />
+    <Compile Include="Controller\Highscore\HighscoreTableCell.cs" />
+    <Compile Include="Controller\Game\GameButtonCell.cs" />
+    <Compile Include="Controller\Game\GameButtonCell.designer.cs">
+      <DependentUpon>GameButtonCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Game\GameController.cs" />
+    <Compile Include="Controller\Game\GameController.designer.cs">
+      <DependentUpon>GameController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Game\GameButtonSource.cs" />
+    <Compile Include="Controller\Game\GameResultController.cs" />
+    <Compile Include="Controller\Game\GameResultController.designer.cs">
+      <DependentUpon>GameResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Start\StartController.cs" />
+    <Compile Include="Controller\Start\StartController.designer.cs">
+      <DependentUpon>StartController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Game\CounterController.cs" />
+    <Compile Include="Controller\Game\CounterController.designer.cs">
+      <DependentUpon>CounterController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Highscore\HighscoreView.cs" />
+    <Compile Include="Controller\Highscore\HighscoreView.designer.cs">
+      <DependentUpon>HighscoreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Highscore\HighscoreUITabController.cs" />
+    <Compile Include="Controller\Highscore\HighscoreUITabController.designer.cs">
+      <DependentUpon>HighscoreUITabController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="..\Domain.MSC\Domain.MSC.projitems" Label="Shared" Condition="Exists('..\Domain.MSC\Domain.MSC.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Controller\Highscore\" />
+    <Folder Include="Controller\Game\" />
+    <Folder Include="Model\" />
+    <Folder Include="Controller\Start\" />
+    <Folder Include="Resources\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\.DS_Store" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\ic_launcher.png" />
+    <BundleResource Include="Resources\Images\divide_64.png" />
+    <BundleResource Include="Resources\Images\highscore_64.png" />
+    <BundleResource Include="Resources\Images\minus_64.png" />
+    <BundleResource Include="Resources\Images\multiply_64.png" />
+    <BundleResource Include="Resources\Images\plus_64.png" />
+    <BundleResource Include="Resources\Images\qmark_64.png" />
+    <BundleResource Include="Resources\Images\divide_48.png" />
+    <BundleResource Include="Resources\Images\highscore_48.png" />
+    <BundleResource Include="Resources\Images\minus_48.png" />
+    <BundleResource Include="Resources\Images\multiply_48.png" />
+    <BundleResource Include="Resources\Images\plus_48.png" />
+    <BundleResource Include="Resources\Images\qmark_48.png" />
+    <BundleResource Include="Resources\Images\launchnumbers.png" />
+    <BundleResource Include="Resources\Images\divide_40.png" />
+    <BundleResource Include="Resources\Images\highscore_40.png" />
+    <BundleResource Include="Resources\Images\minus_40.png" />
+    <BundleResource Include="Resources\Images\multiply_40.png" />
+    <BundleResource Include="Resources\Images\plus_40.png" />
+    <BundleResource Include="Resources\Images\qmark_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+</Project>

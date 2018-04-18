@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HighscoreView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2" customClass="HighscoreView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BGf-Cs-qEj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.2196078431372549" green="0.34509803921568627" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BGf-Cs-qEj" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="60b-g7-Ug6"/>
+                <constraint firstAttribute="bottom" secondItem="BGf-Cs-qEj" secondAttribute="bottom" id="95L-Yi-snW"/>
+                <constraint firstAttribute="trailing" secondItem="BGf-Cs-qEj" secondAttribute="trailing" id="QZA-mQ-Mid"/>
+                <constraint firstItem="BGf-Cs-qEj" firstAttribute="top" secondItem="2" secondAttribute="top" id="RMl-Qj-nLn"/>
+            </constraints>
+            <connections>
+                <outlet property="Table" destination="BGf-Cs-qEj" id="name-outlet-BGf-Cs-qEj"/>
+            </connections>
+        </view>
+    </objects>
+</document>

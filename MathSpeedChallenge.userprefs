@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="MathSpeedChallenge/StressMath.App.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Kolibri" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/anytoe/Xamarin/MathSpeedChallenge/Domain.MSC/GameManager.cs" line="53" column="1" />
+      <Breakpoint file="/Users/anytoe/Xamarin/MathSpeedChallenge/Domain.MSC/GameManager.cs" line="67" column="1" />
+      <Breakpoint file="/Users/anytoe/Xamarin/MathSpeedChallenge/MathSpeedChallenge/HighscoreView.cs" line="25" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

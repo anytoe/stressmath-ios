@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{9040F46A-49F2-4987-945F-B44A20951013}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Domain.MSC</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AppState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\GameManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\SQLite\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\SQLite\SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\DataAccess.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\Model\Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\Model\GameLevel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\Model\GameState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\Model\GameType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Highscore\HighScore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Highscore\LocalHighscore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Highscore\LocalHighscoreItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Math\MathProblem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Math\ProblemGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Math\ProblemGeneratorParam.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Timer\CountdownTimer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Timer\GameTimer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\GameModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Math\Operator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Math\OperationFrequency.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Math\Operand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Games\AdditionGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Games\SubtractionGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Games\MultiplicationGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Games\DivisionGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Model\Games\MixedMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\Model\Entity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)DataAccess\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataAccess\SQLite\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataAccess\Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Model\Highscore\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Model\Math\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Model\Timer\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Model\Games\" />
+  </ItemGroup>
+</Project>

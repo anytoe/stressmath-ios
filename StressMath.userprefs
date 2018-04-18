@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="MathSpeedChallenge/StressMath.App.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MathSpeedChallenge/Controller/Highscore/HighscoreTableCell.cs">
+    <Files>
+      <File FileName="MathSpeedChallenge/Controller/Highscore/HighscoreTableCell.cs" Line="11" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.StressMath.App.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.eb23970efea960aed98a7c836e441aaaed6df178" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/anytoe/Xamarin/MathSpeedChallenge/Domain.MSC/GameManager.cs" line="53" column="1" />
+      <Breakpoint file="/Users/anytoe/Xamarin/MathSpeedChallenge/Domain.MSC/GameManager.cs" line="67" column="1" />
+      <Breakpoint file="/Users/anytoe/Xamarin/MathSpeedChallenge/MathSpeedChallenge/HighscoreView.cs" line="25" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
